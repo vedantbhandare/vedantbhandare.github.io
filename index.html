@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vedant Bhandare — Portfolio</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;color:#111}
+    header{background:#0f172a;color:#fff;padding:24px 18px}
+    .container{max-width:900px;margin:28px auto;padding:0 18px}
+    h1{margin:0;font-size:28px}
+    nav a{color:#9fb3ff;margin-right:12px;text-decoration:none}
+    .hero{margin-top:18px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
+    .card{border:1px solid #ddd;padding:12px;border-radius:8px}
+    footer{border-top:1px solid #eee;margin-top:28px;padding:18px 0;text-align:center;color:#555}
+    @media (max-width:520px){h1{font-size:22px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Vedant Bhandare</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="/Vedant_Bhandare_CV.pdf" target="_blank">Download CV</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section id="about" class="hero">
+    <p><strong>Electronics & Telecommunication Engineering student.</strong> Working on embedded systems, IoT, and prototype hardware. Skilled in C, C++, Python, ESP32, circuit design.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Obstacle Detection Glasses</h3>
+        <p>Ultrasonic sensors + ESP32 — haptic feedback to warn of obstacles.</p>
+        <p><a href="/projects/obstacle-glasses.html">Read more →</a></p>
+      </div>
+
+      <div class="card">
+        <h3>Footstep Energy Generator</h3>
+        <p>Piezoelectric-based energy harvesting from footsteps.</p>
+        <p><a href="/projects/footstep-energy.html">Read more →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="margin-top:20px">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:vedantbhandare2110@gmail.com">vedantbhandare2110@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vedantbhandare2110" target="_blank">linkedin.com/in/vedantbhandare2110</a></p>
+  </section>
+</main>
+
+<footer>
+  <small>© Vedant Bhandare — Built with GitHub Pages</small>
+</footer>
+</body>
+</html>
