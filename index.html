@@ -3,136 +3,910 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedant Bhandare - Portfolio</title>
+    <title>Vedant Bhandare — Electronics & Embedded Systems Engineer</title>
+    <meta name="description" content="Vedant Bhandare — Electronics & Telecommunication Engineering student. Portfolio showcasing embedded systems, computer vision, and hardware projects.">
+    <meta name="author" content="Vedant Bhandare">
+    <meta name="theme-color" content="#00AEEF">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certificates">Certificates</a></li> 
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <header class="nav" id="main-nav">
+        <div class="nav-inner">
+            <div class="nav-logo" id="nav-logo">
+                <span class="nav-logo-accent">VEDANT</span>
+                <span class="nav-logo-text">.DEV</span>
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <a href="#projects" class="nav-link">WORK</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#certificates" class="nav-link">CERTS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+            <a href="#contact" class="nav-cta" id="nav-cta-btn">HIRE ME</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="nav-mobile" id="nav-mobile">
+            <a href="#projects">WORK</a>
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#certificates">CERTS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <h1>Vedant Bhandare</h1>
-            <p>Electronics & Telecommunication Engineering Student</p>
-        </section>
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="hero">
+        <!-- Halftone dot overlay -->
+        <div class="hero-halftone"></div>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Electronics & Telecommunication Engineering studentskilled in microcontrollers, C, and Python. Experienced incircuit design, signal processing, and communicationprotocols. Certified in Soft Skills by IIT Madras, withstrong communication and leadership. Eager to applytechnical expertise in innovative, team-drivenenvironments.
+        <!-- Speed lines SVG -->
+        <svg class="hero-speed-lines" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+            <line x1="756" y1="447" x2="2120" y2="450" stroke="#000" stroke-width="1"/>
+            <line x1="752" y1="436" x2="2088" y2="262" stroke="#000" stroke-width="2.5"/>
+            <line x1="747" y1="428" x2="1996" y2="99" stroke="#000" stroke-width="1"/>
+            <line x1="739" y1="422" x2="1858" y2="-31" stroke="#000" stroke-width="1"/>
+            <line x1="730" y1="418" x2="1694" y2="-120" stroke="#000" stroke-width="2.5"/>
+            <line x1="720" y1="417" x2="1520" y2="-162" stroke="#000" stroke-width="1"/>
+            <line x1="710" y1="418" x2="1346" y2="-155" stroke="#000" stroke-width="1"/>
+            <line x1="701" y1="422" x2="1187" y2="-103" stroke="#000" stroke-width="2.5"/>
+            <line x1="694" y1="428" x2="1055" y2="-14" stroke="#000" stroke-width="1"/>
+            <line x1="689" y1="436" x2="959" y2="99" stroke="#000" stroke-width="1"/>
+            <line x1="686" y1="445" x2="-680" y2="438" stroke="#000" stroke-width="2.5"/>
+            <line x1="686" y1="454" x2="-648" y2="632" stroke="#000" stroke-width="1"/>
+            <line x1="689" y1="463" x2="-556" y2="801" stroke="#000" stroke-width="1"/>
+            <line x1="694" y1="471" x2="-418" y2="931" stroke="#000" stroke-width="2.5"/>
+            <line x1="701" y1="477" x2="-254" y2="1018" stroke="#000" stroke-width="1"/>
+            <line x1="710" y1="481" x2="-80" y2="1062" stroke="#000" stroke-width="1"/>
+            <line x1="720" y1="483" x2="120" y2="1062" stroke="#000" stroke-width="2.5"/>
+            <line x1="730" y1="481" x2="294" y2="1021" stroke="#000" stroke-width="1"/>
+            <line x1="739" y1="477" x2="458" y2="937" stroke="#000" stroke-width="1"/>
+            <line x1="747" y1="471" x2="596" y2="814" stroke="#000" stroke-width="2.5"/>
+            <line x1="752" y1="463" x2="692" y2="651" stroke="#000" stroke-width="1"/>
+            <line x1="756" y1="454" x2="2120" y2="638" stroke="#000" stroke-width="1"/>
+            <line x1="756" y1="463" x2="2088" y2="812" stroke="#000" stroke-width="2.5"/>
+            <line x1="752" y1="471" x2="1996" y2="969" stroke="#000" stroke-width="1"/>
+            <line x1="747" y1="477" x2="1858" y2="1080" stroke="#000" stroke-width="1"/>
+            <line x1="739" y1="481" x2="1694" y2="1140" stroke="#000" stroke-width="2.5"/>
+            <line x1="730" y1="483" x2="1520" y2="1150" stroke="#000" stroke-width="1"/>
+            <line x1="720" y1="483" x2="1346" y2="1110" stroke="#000" stroke-width="1"/>
+            <line x1="710" y1="481" x2="1187" y2="1020" stroke="#000" stroke-width="2.5"/>
+            <line x1="701" y1="477" x2="1055" y2="897" stroke="#000" stroke-width="1"/>
+            <line x1="694" y1="471" x2="959" y2="747" stroke="#000" stroke-width="1"/>
+        </svg>
+
+        <!-- Comic panel border -->
+        <div class="hero-panel-border"></div>
+
+        <!-- Rotating diamond top-right -->
+        <div class="hero-diamond-1">
+            <svg width="110" height="110" viewBox="0 0 110 110">
+                <polygon points="55,5 105,55 55,105 5,55" fill="#FFF200" stroke="#000" stroke-width="4"/>
+                <polygon points="55,20 90,55 55,90 20,55" fill="none" stroke="#000" stroke-width="2"/>
+            </svg>
+        </div>
+
+        <!-- Rotating diamond bottom-left -->
+        <div class="hero-diamond-2">
+            <svg width="75" height="75" viewBox="0 0 75 75">
+                <polygon points="37,3 72,37 37,72 3,37" fill="#FFF200" stroke="#000" stroke-width="3"/>
+            </svg>
+        </div>
+
+        <!-- Pulsing star top-left -->
+        <div class="hero-star">
+            <svg width="90" height="90" viewBox="0 0 100 100">
+                <polygon points="50,2 61,37 95,37 67,57 78,92 50,72 22,92 33,57 5,37 39,37" fill="#FFF200" stroke="#000" stroke-width="2"/>
+            </svg>
+        </div>
+
+        <!-- Zigzag accent bottom-right -->
+        <div class="hero-zigzag">
+            <svg width="60" height="120" viewBox="0 0 60 120">
+                <polyline points="5,0 55,20 5,40 55,60 5,80 55,100 5,120" stroke="#000" stroke-width="5" fill="none"/>
+            </svg>
+        </div>
+
+        <!-- Decorative circles -->
+        <div class="hero-circle-1"></div>
+        <div class="hero-circle-2"></div>
+
+        <!-- Main content -->
+        <div class="hero-content">
+            <div class="hero-eyebrow reveal">
+                <span class="hero-eyebrow-line"></span>
+                <span class="hero-eyebrow-text">Electronics &amp; Telecommunication Engineer</span>
+                <span class="hero-eyebrow-line"></span>
+            </div>
+
+            <div class="reveal reveal-delay-1">
+                <span class="hero-title-main">VEDANT</span>
+            </div>
+
+            <div class="reveal reveal-delay-2">
+                <span class="hero-title-accent">BHANDARE</span>
+            </div>
+
+            <p class="hero-subtitle reveal reveal-delay-3">
+                Building the bridge between hardware signals and software intelligence.
+                Embedded systems, computer vision, and ML-powered prototypes.
             </p>
-        </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <a href="https://drive.google.com/drive/u/0/folders/1u1bt5N9i1OVi7PZ1X9NjJPRFROhRDN_-" target="_blank" class="project-link">
-    <div class="project">
-        <h3>Smart Obstacle and Height Detection System</h3>
-        <p>
-Engineered and prototyped a wearable assistive device to improve mobility for the visually impaired.
-Technology Stack:Programmed an arduino uno r3 in C++ to process real-time data from HC-SR04 ultrasonic sensors.
-Key Achievement:Achieved a reliable obstacle detection range of 2 meters with a 95% accuracy rate, providing haptic and auditory feedback to the user.
-</p>
-    </div>
-</a>
-           <a href="https://drive.google.com/drive/u/0/folders/1qzK5hBwx7yV5Dep93hAikVFfNhekKL03" target="_blank" class="project-link">
-    <div class="project">
-        <h3>Obstacle detector using Infrared Proximity sensor</h3>
-        <p>
-            Constructed and calibrated a compact infrared proximity sensor for object detection and avoidance applications
-            Components:Utilized an IR LED emitter, a photodiode receiver, and an LM358 op-amp comparator to create the sensing circuit.
-            Performance:Calibrated the sensor to achieve a consistent and reliable detection threshold at [e.g., 10 cm].
-        </p>
-    </div>
-</a>
-            <a href="https://drive.google.com/drive/u/0/folders/1KK8bWVIbtewx_nH45o5s3GwNPfIaIdbV" target="_blank" class="project-link">
-    <div class="project">
-        <h3>Footstep Electric Generator</h3>
-        <p>
-            Designed and built a proof-of-concept for a renewable energy solution that captures kinetic energy from human footsteps.
-            Methodology:Integrated piezoelectric sensors into a footwear prototype to convert mechanical stress into electrical energy.
-            Outcome:Successfully generated [e.g., 5 volts] of output, demonstrating the viability of the concept for powering low-energy devices like LEDs and sensors.
-        </p>
-    </div>
-</a>
-        </section>
+            <div class="hero-cta-group reveal reveal-delay-3">
+                <a href="#projects" class="hero-btn-primary">SEE MY WORK</a>
+                <a href="#contact" class="hero-btn-secondary">LET'S COLLAB</a>
+            </div>
 
-        
-            <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-category">
-        <h3>Programming & Software</h3>
-        <ul>
-            <li>C</li>
-            <li>C++</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>Algorithms</li>
-            <li>Strong Coding Aptitude</li>
-        </ul>
-    </div>
-    <div class="skill-category">
-        <h3>Hardware & Electronics</h3>
-        <ul>
-            <li>Electronics</li>
-            <li>Microcontrollers</li>
-            <li>Circuit Design</li>
-            <li>Hardware Troubleshooting</li>
-        </ul>
-    </div>
-    <div class="skill-category">
-        <h3>Professional Skills</h3>
-        <ul>
-            <li>Leadership</li>
-            <li>Communication</li>
-            <li>Teamwork</li>
-            <li>Fast Learner</li>
-        </ul>
-    </div>
-</section>
-      <section id="certificates">
-    <h2>Certifications</h2>
-    <ul>
-        <li>
-            <a href="certificates/mongodb certficate.pdf" target="_blank">MongoDB Basics for Students - MongoDB</a>
-        </li>
-        <li>
-            <a href="certificates/Soft Skill Development certificate.pdf" target="_blank">Soft Skill Development - Kharagpur</a>
-        </li>
-        <li>
-            <a href="certificates/python developer.jpg" target="_blank">Python Developer - Sololearn</a>
-        </li>
-        </ul>
-</section> 
+            <div class="hero-stats reveal reveal-delay-4">
+                <div class="hero-stat">
+                    <div class="hero-stat-num">5+</div>
+                    <div class="hero-stat-label">Projects</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num">3</div>
+                    <div class="hero-stat-label">Certifications</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num">6</div>
+                    <div class="hero-stat-label">Skill Domains</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num">95%</div>
+                    <div class="hero-stat-label">Detection Acc</div>
+                </div>
+            </div>
+        </div>
 
-        
-            <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>I'd love to connect! You can reach me here:</p>
-    
-    <p><strong>Phone:</strong> +91 8655352665</p>
+        <!-- Scroll arrow -->
+        <div class="hero-scroll">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
 
-    <div>
-        <a href="mailto:vedantbhandare2110@gmail.com">Email Me</a>
-        <a href="https://www.linkedin.com/in/vedantbhandare2110/" target="_blank">LinkedIn</a>
-        <a href="resume.pdf" target="_blank">Download Resume</a>
+        <!-- Bottom edge gradient -->
+        <div class="hero-bottom-edge"></div>
+    </section>
+
+    <!-- ============================================
+         INK SPLATTER DIVIDER
+         ============================================ -->
+    <div class="divider-ink">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+            <path d="M0,0 L1440,0 L1440,70 Q1380,40 1310,68 Q1240,90 1170,55 Q1100,28 1030,62 Q960,88 890,55 Q820,28 750,65 Q680,95 610,58 Q540,28 470,68 Q400,95 330,60 Q260,30 190,72 Q120,98 60,62 Q30,46 0,70 Z" fill="#00AEEF"/>
+            <ellipse cx="150" cy="75" rx="28" ry="16" fill="#00AEEF"/>
+            <ellipse cx="158" cy="94" rx="12" ry="9" fill="#00AEEF"/>
+            <circle cx="164" cy="108" r="5" fill="#00AEEF"/>
+            <ellipse cx="480" cy="80" rx="32" ry="18" fill="#00AEEF"/>
+            <ellipse cx="490" cy="102" rx="14" ry="10" fill="#00AEEF"/>
+            <circle cx="485" cy="118" r="6" fill="#00AEEF"/>
+            <ellipse cx="860" cy="72" rx="26" ry="15" fill="#00AEEF"/>
+            <ellipse cx="866" cy="92" rx="10" ry="8" fill="#00AEEF"/>
+            <ellipse cx="1200" cy="78" rx="30" ry="17" fill="#00AEEF"/>
+            <ellipse cx="1208" cy="98" rx="13" ry="9" fill="#00AEEF"/>
+            <circle cx="1205" cy="112" r="5" fill="#00AEEF"/>
+            <circle cx="290" cy="68" r="7" fill="#00AEEF"/>
+            <circle cx="650" cy="72" r="9" fill="#00AEEF"/>
+            <circle cx="660" cy="86" r="4" fill="#00AEEF"/>
+            <circle cx="1050" cy="65" r="6" fill="#00AEEF"/>
+            <circle cx="380" cy="62" r="5" fill="#00AEEF"/>
+            <circle cx="950" cy="60" r="8" fill="#00AEEF"/>
+            <circle cx="730" cy="82" r="5" fill="#00AEEF"/>
+        </svg>
     </div>
-</section>
-        
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Vedant Bhandare</p>
-    </footer>
-    <script src="script.js"></script>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-label reveal-left">
+                <div class="section-label-line" style="background: #E61D24;"></div>
+                <span class="section-label-text" style="color: #E61D24;">Origin Story</span>
+            </div>
+
+            <div class="about-panels">
+                <!-- Left — main bio panel -->
+                <div class="about-main reveal">
+                    <div class="about-panel-num">01</div>
+                    <h2 class="about-heading">THE</h2>
+                    <h2 class="about-heading-accent">ENGINEER</h2>
+
+                    <p class="about-text">
+                        Electronics &amp; Telecommunication Engineering student with hands-on experience in microcontrollers, embedded systems, C/C++ programming, and Python. I enjoy building end-to-end hardware–software prototypes involving sensors, circuit design, signal processing, and basic machine learning.
+                    </p>
+                    <p class="about-text">
+                        I have worked on projects such as an ML-enabled bio-monitoring system, obstacle-detection wearable for visually impaired users, and a piezoelectric energy harvesting prototype. Certified in Soft Skills by IIT Kharagpur and experienced in teamwork, communication, and leadership.
+                    </p>
+
+                    <div class="tool-badges">
+                        <span class="tool-badge" style="color: #06B6D4; border-color: #06B6D4;">Arduino</span>
+                        <span class="tool-badge" style="color: #FF9A00; border-color: #FF9A00;">Python</span>
+                        <span class="tool-badge" style="color: #FF3366; border-color: #FF3366;">C/C++</span>
+                        <span class="tool-badge" style="color: #9999FF; border-color: #9999FF;">OpenCV</span>
+                        <span class="tool-badge" style="color: #EA77FF; border-color: #EA77FF;">MATLAB</span>
+                        <span class="tool-badge" style="color: #00C4CC; border-color: #00C4CC;">ESP32</span>
+                        <span class="tool-badge" style="color: #F24E1E; border-color: #F24E1E;">MediaPipe</span>
+                    </div>
+                </div>
+
+                <!-- Right — stats panels stacked -->
+                <div class="about-stats-col">
+                    <div class="stat-panel reveal-right">
+                        <div class="stat-watermark">02</div>
+                        <div class="stat-num" style="color: #FFF200; filter: drop-shadow(0 0 20px rgba(255,242,0,0.33));">5+</div>
+                        <div class="stat-label">Projects Delivered</div>
+                        <div class="stat-corner" style="border-color: #FFF200 transparent transparent transparent;"></div>
+                    </div>
+                    <div class="stat-panel reveal-right reveal-delay-1">
+                        <div class="stat-watermark">03</div>
+                        <div class="stat-num" style="color: #E61D24; filter: drop-shadow(0 0 20px rgba(230,29,36,0.33));">3</div>
+                        <div class="stat-label">Certifications</div>
+                        <div class="stat-corner" style="border-color: #E61D24 transparent transparent transparent;"></div>
+                    </div>
+                    <div class="stat-panel reveal-right reveal-delay-2">
+                        <div class="stat-watermark">04</div>
+                        <div class="stat-num" style="color: #00AEEF; filter: drop-shadow(0 0 20px rgba(0,174,239,0.33));">95%</div>
+                        <div class="stat-label">Detection Accuracy</div>
+                        <div class="stat-corner" style="border-color: #00AEEF transparent transparent transparent;"></div>
+                    </div>
+                    <div class="about-quote reveal-right reveal-delay-3">
+                        <div class="about-quote-mark">"</div>
+                        <p class="about-quote-text">
+                            "Engineering isn't just building — it's solving problems that matter."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CRACKING GLASS DIVIDER
+         ============================================ -->
+    <div class="divider-crack">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+            <path d="M580,0 L680,30 L720,25 L760,55 L800,48 L840,80 L900,75 L960,90" stroke="#E61D24" stroke-width="10" fill="none" opacity="0.15"/>
+            <path d="M860,0 L800,28 L760,22 L720,52 L680,46 L640,78 L580,72 L530,90" stroke="#E61D24" stroke-width="10" fill="none" opacity="0.15"/>
+            <path d="M720,0 L700,22 L645,18 L610,48 L558,44 L510,75 L465,70 L420,90" stroke="#E61D24" stroke-width="2.5" fill="none"/>
+            <path d="M720,0 L748,24 L795,20 L832,50 L882,45 L924,76 L975,72 L1020,90" stroke="#E61D24" stroke-width="2.5" fill="none"/>
+            <path d="M700,22 L660,32 L635,30" stroke="#E61D24" stroke-width="1.5" fill="none" opacity="0.75"/>
+            <path d="M700,22 L692,38" stroke="#E61D24" stroke-width="1" fill="none" opacity="0.5"/>
+            <path d="M645,18 L638,5" stroke="#E61D24" stroke-width="1" fill="none" opacity="0.55"/>
+            <path d="M610,48 L595,40 L580,42" stroke="#E61D24" stroke-width="1.2" fill="none" opacity="0.6"/>
+            <path d="M558,44 L548,55 L530,52" stroke="#E61D24" stroke-width="1" fill="none" opacity="0.5"/>
+            <path d="M748,24 L780,36 L805,34" stroke="#E61D24" stroke-width="1.5" fill="none" opacity="0.75"/>
+            <path d="M748,24 L756,40" stroke="#E61D24" stroke-width="1" fill="none" opacity="0.5"/>
+            <path d="M795,20 L802,7" stroke="#E61D24" stroke-width="1" fill="none" opacity="0.55"/>
+            <path d="M832,50 L848,42 L864,44" stroke="#E61D24" stroke-width="1.2" fill="none" opacity="0.6"/>
+            <path d="M882,45 L892,56 L910,54" stroke="#E61D24" stroke-width="1" fill="none" opacity="0.5"/>
+            <path d="M510,75 L495,68" stroke="#E61D24" stroke-width="0.8" fill="none" opacity="0.45"/>
+            <path d="M924,76 L940,69" stroke="#E61D24" stroke-width="0.8" fill="none" opacity="0.45"/>
+            <circle cx="720" cy="0" r="6" fill="#E61D24" opacity="0.9"/>
+            <circle cx="720" cy="0" r="14" fill="#E61D24" opacity="0.2"/>
+        </svg>
+    </div>
+
+    <!-- ============================================
+         PROJECTS / GALLERY SECTION
+         ============================================ -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="gallery-header">
+                <div class="section-label reveal-left">
+                    <div class="section-label-line" style="background: #E61D24;"></div>
+                    <span class="section-label-text" style="color: #E61D24;">Portfolio</span>
+                </div>
+                <h2 class="section-title reveal">THE <span class="section-title-accent">GALLERY</span></h2>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Featured: Bio-monitoring -->
+                <a href="https://drive.google.com/drive/u/0/folders/1L9eINkBOlEpBXUjSU-nZGQXliHa2o8Et" target="_blank" rel="noopener noreferrer" class="gallery-item featured reveal" id="project-bio">
+                    <div class="gallery-item-visual">
+                        <img src="images/project_bio.png" alt="Bio-monitoring system" class="gallery-item-img" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Machine Learning</span>
+                        <h3 class="gallery-item-title">BIO-MONITORING SYSTEM</h3>
+                        <p class="gallery-item-subtitle">ML-Powered Real-Time Health Coach</p>
+                        <div class="gallery-item-tags">
+                            <span class="gallery-item-tag">ML</span>
+                            <span class="gallery-item-tag">SENSORS</span>
+                            <span class="gallery-item-tag">PYTHON</span>
+                            <span class="gallery-item-tag">REAL-TIME</span>
+                        </div>
+                        <span class="gallery-item-link">VIEW PROJECT →</span>
+                    </div>
+                    <div class="gallery-item-corner"></div>
+                </a>
+
+                <!-- 3D Object Gesture Viewer -->
+                <a href="https://github.com/vedantbhandare/gesture_3d_viewer" target="_blank" rel="noopener noreferrer" class="gallery-item reveal reveal-delay-1" id="project-gesture">
+                    <div class="gallery-item-visual">
+                        <img src="images/project_gesture.png" alt="Hand gesture tracking" class="gallery-item-img" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Computer Vision</span>
+                        <h3 class="gallery-item-title">3D GESTURE VIEWER</h3>
+                        <p class="gallery-item-subtitle">Touch-Free 3D Object Manipulation</p>
+                        <div class="gallery-item-tags">
+                            <span class="gallery-item-tag">OPENCV</span>
+                            <span class="gallery-item-tag">MEDIAPIPE</span>
+                            <span class="gallery-item-tag">HCI</span>
+                        </div>
+                        <span class="gallery-item-link">VIEW PROJECT →</span>
+                    </div>
+                    <div class="gallery-item-corner"></div>
+                </a>
+
+                <!-- Smart Obstacle Detection -->
+                <a href="https://drive.google.com/drive/u/0/folders/1u1bt5N9i1OVi7PZ1X9NjJPRFROhRDN_-" target="_blank" rel="noopener noreferrer" class="gallery-item reveal reveal-delay-2" id="project-obstacle">
+                    <div class="gallery-item-visual">
+                        <img src="images/project_obstacle.png" alt="Arduino obstacle detection" class="gallery-item-img" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Embedded Systems</span>
+                        <h3 class="gallery-item-title">OBSTACLE DETECTOR</h3>
+                        <p class="gallery-item-subtitle">Wearable for Visually Impaired</p>
+                        <div class="gallery-item-tags">
+                            <span class="gallery-item-tag">ARDUINO</span>
+                            <span class="gallery-item-tag">C++</span>
+                            <span class="gallery-item-tag">WEARABLE</span>
+                        </div>
+                        <span class="gallery-item-link">VIEW PROJECT →</span>
+                    </div>
+                    <div class="gallery-item-corner"></div>
+                </a>
+
+                <!-- IR Obstacle Detector -->
+                <a href="https://drive.google.com/drive/u/0/folders/1qzK5hBwx7yV5Dep93hAikVFfNhekKL03" target="_blank" rel="noopener noreferrer" class="gallery-item reveal reveal-delay-1" id="project-ir">
+                    <div class="gallery-item-visual">
+                        <img src="images/project_ir.png" alt="IR proximity sensor" class="gallery-item-img" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Analog Electronics</span>
+                        <h3 class="gallery-item-title">IR DETECTOR</h3>
+                        <p class="gallery-item-subtitle">Infrared Proximity Sensor</p>
+                        <div class="gallery-item-tags">
+                            <span class="gallery-item-tag">IR SENSOR</span>
+                            <span class="gallery-item-tag">OP-AMP</span>
+                            <span class="gallery-item-tag">ANALOG</span>
+                        </div>
+                        <span class="gallery-item-link">VIEW PROJECT →</span>
+                    </div>
+                    <div class="gallery-item-corner"></div>
+                </a>
+
+                <!-- Footstep Energy Generator -->
+                <a href="https://drive.google.com/drive/u/0/folders/1KK8bWVIbtewx_nH45o5s3GwNPfIaIdbV" target="_blank" rel="noopener noreferrer" class="gallery-item reveal reveal-delay-2" id="project-energy">
+                    <div class="gallery-item-visual">
+                        <img src="images/project_energy.png" alt="Piezoelectric energy harvesting" class="gallery-item-img" loading="lazy">
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Energy & IoT</span>
+                        <h3 class="gallery-item-title">ENERGY GENERATOR</h3>
+                        <p class="gallery-item-subtitle">Piezoelectric Footstep Harvester</p>
+                        <div class="gallery-item-tags">
+                            <span class="gallery-item-tag">PIEZOELECTRIC</span>
+                            <span class="gallery-item-tag">ENERGY</span>
+                            <span class="gallery-item-tag">IOT</span>
+                        </div>
+                        <span class="gallery-item-link">VIEW PROJECT →</span>
+                    </div>
+                    <div class="gallery-item-corner"></div>
+                </a>
+            </div>
+
+            <div class="gallery-bottom-cta reveal">
+                <p class="gallery-bottom-text">This is just a taste. More projects coming soon.</p>
+                <a href="#contact" class="gallery-bottom-btn">COMMISSION A PROJECT</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         DARK INK SPLATTER DIVIDER
+         ============================================ -->
+    <div class="divider-ink-dark">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,30 Q180,0 360,40 Q540,75 720,35 Q900,0 1080,42 Q1260,80 1440,30 L1440,0 L0,0 Z" fill="#E61D24" opacity="0.12"/>
+            <line x1="0" y1="50" x2="1440" y2="50" stroke="#E61D24" stroke-width="1" opacity="0.15"/>
+            <circle cx="200" cy="55" r="6" fill="#E61D24" opacity="0.2"/>
+            <circle cx="205" cy="65" r="3" fill="#E61D24" opacity="0.15"/>
+            <circle cx="700" cy="50" r="8" fill="#E61D24" opacity="0.2"/>
+            <circle cx="708" cy="62" r="4" fill="#E61D24" opacity="0.15"/>
+            <circle cx="1100" cy="53" r="7" fill="#E61D24" opacity="0.2"/>
+            <circle cx="1108" cy="65" r="3" fill="#E61D24" opacity="0.15"/>
+        </svg>
+    </div>
+
+    <!-- ============================================
+         SKILLS SECTION
+         ============================================ -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-label reveal-left">
+                <div class="section-label-line" style="background: #FFF200;"></div>
+                <span class="section-label-text" style="color: #FFF200;">Arsenal</span>
+            </div>
+            <h2 class="section-title reveal">POWER <span class="section-title-accent">LEVELS</span></h2>
+
+            <div class="skills-grid">
+                <!-- Skill bars -->
+                <div class="skill-bars">
+                    <div class="reveal">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">Python</span>
+                            <span class="skill-bar-pct" style="color: #FF9A00;">90%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="90" style="background: linear-gradient(90deg, #FF9A0099, #FF9A00); box-shadow: 0 0 12px #FF9A0066;">
+                                <div class="skill-fill-shimmer" style="background: linear-gradient(90deg, transparent, #FF9A00);"></div>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Data analysis, ML models, automation, scripting</p>
+                    </div>
+                    <div class="reveal reveal-delay-1">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">Embedded Systems</span>
+                            <span class="skill-bar-pct" style="color: #31A8FF;">92%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="92" style="background: linear-gradient(90deg, #31A8FF99, #31A8FF); box-shadow: 0 0 12px #31A8FF66;">
+                                <div class="skill-fill-shimmer" style="background: linear-gradient(90deg, transparent, #31A8FF);"></div>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Arduino, ESP32, sensor integration, UART/I2C protocols</p>
+                    </div>
+                    <div class="reveal reveal-delay-1">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">C / C++</span>
+                            <span class="skill-bar-pct" style="color: #FF3366;">85%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="85" style="background: linear-gradient(90deg, #FF336699, #FF3366); box-shadow: 0 0 12px #FF336666;">
+                                <div class="skill-fill-shimmer" style="background: linear-gradient(90deg, transparent, #FF3366);"></div>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Embedded C, DSA, real-time systems programming</p>
+                    </div>
+                    <div class="reveal reveal-delay-2">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">Circuit Design</span>
+                            <span class="skill-bar-pct" style="color: #00C4CC;">88%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="88" style="background: linear-gradient(90deg, #00C4CC99, #00C4CC); box-shadow: 0 0 12px #00C4CC66;">
+                                <div class="skill-fill-shimmer" style="background: linear-gradient(90deg, transparent, #00C4CC);"></div>
+                            </div>
+                        </div>
+                        <p class="skill-desc">PCB design, Multisim, Proteus, analog/digital circuits</p>
+                    </div>
+                    <div class="reveal reveal-delay-2">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">Computer Vision</span>
+                            <span class="skill-bar-pct" style="color: #9999FF;">80%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="80" style="background: linear-gradient(90deg, #9999FF99, #9999FF); box-shadow: 0 0 12px #9999FF66;">
+                                <div class="skill-fill-shimmer" style="background: linear-gradient(90deg, transparent, #9999FF);"></div>
+                            </div>
+                        </div>
+                        <p class="skill-desc">OpenCV, MediaPipe, gesture recognition, real-time CV</p>
+                    </div>
+                    <div class="reveal reveal-delay-3">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">Machine Learning</span>
+                            <span class="skill-bar-pct" style="color: #EA77FF;">78%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="78" style="background: linear-gradient(90deg, #EA77FF99, #EA77FF); box-shadow: 0 0 12px #EA77FF66;">
+                                <div class="skill-fill-shimmer" style="background: linear-gradient(90deg, transparent, #EA77FF);"></div>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Data preprocessing, model training, feature extraction</p>
+                    </div>
+                    <div class="reveal reveal-delay-3">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">MATLAB</span>
+                            <span class="skill-bar-pct" style="color: #F24E1E;">75%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="75" style="background: linear-gradient(90deg, #F24E1E99, #F24E1E); box-shadow: 0 0 12px #F24E1E66;">
+                                <div class="skill-fill-shimmer" style="background: linear-gradient(90deg, transparent, #F24E1E);"></div>
+                            </div>
+                        </div>
+                        <p class="skill-desc">Signal processing, simulations, control systems</p>
+                    </div>
+                </div>
+
+                <!-- Services / Capabilities -->
+                <div class="services-col">
+                    <p class="services-heading reveal">— Capabilities —</p>
+
+                    <div class="service-card reveal">
+                        <div class="service-card-inner">
+                            <span class="service-icon">⚡</span>
+                            <div>
+                                <h3 class="service-title">EMBEDDED SYSTEMS</h3>
+                                <p class="service-desc">Arduino, ESP32, sensor integration, circuit design, PCB prototyping — end-to-end hardware development.</p>
+                            </div>
+                        </div>
+                        <div class="service-corner"></div>
+                    </div>
+
+                    <div class="service-card reveal reveal-delay-1">
+                        <div class="service-card-inner">
+                            <span class="service-icon">👁️</span>
+                            <div>
+                                <h3 class="service-title">COMPUTER VISION</h3>
+                                <p class="service-desc">OpenCV, MediaPipe, gesture recognition, landmark extraction, real-time image processing systems.</p>
+                            </div>
+                        </div>
+                        <div class="service-corner"></div>
+                    </div>
+
+                    <div class="service-card reveal reveal-delay-2">
+                        <div class="service-card-inner">
+                            <span class="service-icon">🧠</span>
+                            <div>
+                                <h3 class="service-title">MACHINE LEARNING</h3>
+                                <p class="service-desc">Data preprocessing, model training, feature extraction, gesture classification, real-time ML inference.</p>
+                            </div>
+                        </div>
+                        <div class="service-corner"></div>
+                    </div>
+
+                    <div class="service-card reveal reveal-delay-3">
+                        <div class="service-card-inner">
+                            <span class="service-icon">🔧</span>
+                            <div>
+                                <h3 class="service-title">HARDWARE PROTOTYPING</h3>
+                                <p class="service-desc">Multisim, Proteus, MATLAB, circuit simulation, wearable device design, IoT fundamentals.</p>
+                            </div>
+                        </div>
+                        <div class="service-corner"></div>
+                    </div>
+
+                    <div class="skills-cta-banner reveal reveal-delay-4">
+                        <p class="skills-cta-title">READY FOR NEW CHALLENGES</p>
+                        <p class="skills-cta-sub">Eager to apply skills to innovative engineering projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CERTIFICATES SECTION
+         ============================================ -->
+    <section class="certs-section" id="certificates">
+        <div class="container">
+            <div class="section-label reveal-left">
+                <div class="section-label-line" style="background: #00AEEF;"></div>
+                <span class="section-label-text" style="color: #00AEEF;">Credentials</span>
+            </div>
+            <h2 class="section-title reveal">THE <span class="section-title-accent">CERTS</span></h2>
+
+            <div class="certs-list">
+                <a href="certificates/mongodb certficate.pdf" target="_blank" rel="noopener noreferrer" class="cert-item reveal" id="cert-mongodb">
+                    <div class="cert-inner">
+                        <span class="cert-number">01</span>
+                        <div class="cert-details">
+                            <span class="cert-name">MONGODB BASICS FOR STUDENTS</span>
+                            <span class="cert-issuer">MongoDB</span>
+                        </div>
+                        <span class="cert-arrow">→</span>
+                    </div>
+                </a>
+                <a href="certificates/Soft Skill Development certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-item reveal reveal-delay-1" id="cert-softskills">
+                    <div class="cert-inner">
+                        <span class="cert-number">02</span>
+                        <div class="cert-details">
+                            <span class="cert-name">SOFT SKILL DEVELOPMENT</span>
+                            <span class="cert-issuer">IIT Kharagpur</span>
+                        </div>
+                        <span class="cert-arrow">→</span>
+                    </div>
+                </a>
+                <a href="certificates/python developer.jpg" target="_blank" rel="noopener noreferrer" class="cert-item reveal reveal-delay-2" id="cert-python">
+                    <div class="cert-inner">
+                        <span class="cert-number">03</span>
+                        <div class="cert-details">
+                            <span class="cert-name">PYTHON DEVELOPER</span>
+                            <span class="cert-issuer">Sololearn</span>
+                        </div>
+                        <span class="cert-arrow">→</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="contact-section" id="contact">
+        <div class="contact-accent-bar"></div>
+        <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">
+
+            <div class="contact-header reveal">
+                <div class="section-label">
+                    <div class="section-label-line" style="background: #E61D24;"></div>
+                    <span class="section-label-text" style="color: #E61D24;">Get In Touch</span>
+                </div>
+                <h2 class="contact-heading">
+                    LET'S CREATE<br>
+                    <span class="section-title-accent">SOMETHING</span> LEGENDARY
+                </h2>
+                <p class="contact-desc">
+                    Ready to collaborate on exciting engineering projects? Drop your details below or reach out directly.
+                    I'd love to discuss opportunities, projects, or just talk tech.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <form class="contact-form reveal-left" id="contact-form" action="https://formspree.io/f/xpzvpwqd" method="POST">
+                    <div class="form-row">
+                        <div>
+                            <label class="form-label">Your Name</label>
+                            <input type="text" name="name" placeholder="John Doe" required class="form-input">
+                        </div>
+                        <div>
+                            <label class="form-label">Email Address</label>
+                            <input type="email" name="email" placeholder="you@email.com" required class="form-input">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="form-label">Subject</label>
+                        <select name="subject" required class="form-input form-select">
+                            <option value="" disabled selected>Select a topic...</option>
+                            <option value="project-collab">Project Collaboration</option>
+                            <option value="internship">Internship Opportunity</option>
+                            <option value="freelance">Freelance Work</option>
+                            <option value="other">Other / General</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label">Message</label>
+                        <textarea name="message" rows="5" placeholder="Tell me about your project or opportunity..." required class="form-input form-textarea"></textarea>
+                    </div>
+                    <button type="submit" class="form-submit" id="form-submit-btn">
+                        LAUNCH THE MESSAGE
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info reveal-right">
+                    <div class="contact-direct">
+                        <h3 class="contact-direct-title">DIRECT LINE</h3>
+                        <div class="contact-direct-items">
+                            <a href="mailto:vedantbhandare2110@gmail.com" class="contact-direct-item" style="text-decoration: none;">
+                                <div class="contact-direct-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div>
+                                    <div class="contact-direct-label">Email</div>
+                                    <div class="contact-direct-value">vedantbhandare2110@gmail.com</div>
+                                </div>
+                            </a>
+                            <div class="contact-direct-item">
+                                <div class="contact-direct-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div>
+                                    <div class="contact-direct-label">Phone</div>
+                                    <div class="contact-direct-value">+91 8655352665</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="social-title">FIND ME ON</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/vedantbhandare2110/" target="_blank" rel="noopener noreferrer" class="social-link" id="contact-linkedin">
+                                <span class="social-link-icon" style="color: #0A66C2;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </span>
+                                <div>
+                                    <div class="social-link-label">LinkedIn</div>
+                                    <div class="social-link-handle">Vedant Bhandare</div>
+                                </div>
+                            </a>
+                            <a href="https://github.com/vedantbhandare" target="_blank" rel="noopener noreferrer" class="social-link" id="contact-github">
+                                <span class="social-link-icon" style="color: #fff;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </span>
+                                <div>
+                                    <div class="social-link-label">GitHub</div>
+                                    <div class="social-link-handle">vedantbhandare</div>
+                                </div>
+                            </a>
+                            <a href="resume.pdf" target="_blank" class="social-link" id="contact-resume">
+                                <span class="social-link-icon" style="color: #E61D24;">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </span>
+                                <div>
+                                    <div class="social-link-label">Resume</div>
+                                    <div class="social-link-handle">Download PDF</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="availability-badge">
+                        <div class="availability-dot"></div>
+                        <div>
+                            <div class="availability-title">AVAILABLE FOR OPPORTUNITIES</div>
+                            <div class="availability-sub">Open to internships, projects & collaborations</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <span class="footer-logo-accent">VEDANT</span>
+                <span class="footer-logo-text">.DEV</span>
+                <span class="footer-copy">© 2025 · Electronics & Telecommunication Engineering</span>
+            </div>
+        </footer>
+    </section>
+
+    <!-- ============================================
+         SCRIPTS
+         ============================================ -->
+    <script>
+        // ========================================
+        // 1. NAV SCROLL STATE
+        // ========================================
+        const mainNav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                mainNav.classList.add('scrolled');
+            } else {
+                mainNav.classList.remove('scrolled');
+            }
+        });
+
+        // ========================================
+        // 2. NAV LOGO — scroll to top
+        // ========================================
+        document.getElementById('nav-logo').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ========================================
+        // 3. SCROLL REVEAL — IntersectionObserver
+        // ========================================
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // ========================================
+        // 4. SKILL BAR ANIMATION
+        // ========================================
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const fills = entry.target.querySelectorAll('.skill-fill');
+                    fills.forEach((fill, i) => {
+                        setTimeout(() => {
+                            fill.style.width = fill.dataset.width + '%';
+                        }, i * 100);
+                    });
+                    skillObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        const skillBars = document.querySelector('.skill-bars');
+        if (skillBars) skillObserver.observe(skillBars);
+
+        // ========================================
+        // 5. ACTIVE NAV LINK — IntersectionObserver
+        // ========================================
+        const sections = document.querySelectorAll('section[id], .certs-section[id], .contact-section[id]');
+        const navLinks = document.querySelectorAll('.nav-links .nav-link');
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    const activeLink = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+                    if (activeLink) activeLink.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.2,
+            rootMargin: '-80px 0px -50% 0px'
+        });
+
+        sections.forEach(section => navObserver.observe(section));
+
+        // ========================================
+        // 6. SMOOTH SCROLL for nav links
+        // ========================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    // Close mobile nav if open
+                    document.getElementById('nav-mobile').classList.remove('open');
+                }
+            });
+        });
+
+        // ========================================
+        // 7. MOBILE NAV TOGGLE
+        // ========================================
+        const navToggle = document.getElementById('nav-toggle');
+        const navMobile = document.getElementById('nav-mobile');
+
+        navToggle.addEventListener('click', () => {
+            navMobile.classList.toggle('open');
+        });
+
+        // ========================================
+        // 8. CONTACT FORM — submit feedback
+        // ========================================
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('form-submit-btn');
+
+        contactForm.addEventListener('submit', function(e) {
+            // Allow form to submit via Formspree but show visual feedback
+            submitBtn.classList.add('sent');
+            submitBtn.innerHTML = 'MESSAGE SENT — I\'LL BE IN TOUCH <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+            setTimeout(() => {
+                submitBtn.classList.remove('sent');
+                submitBtn.innerHTML = 'LAUNCH THE MESSAGE <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
+            }, 4000);
+        });
+
+        // ========================================
+        // 9. REDUCED MOTION SUPPORT
+        // ========================================
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+                el.classList.add('active');
+                el.style.transition = 'none';
+            });
+            // Still animate skill bars but instantly
+            document.querySelectorAll('.skill-fill').forEach(fill => {
+                fill.style.transition = 'none';
+                fill.style.width = fill.dataset.width + '%';
+            });
+        }
+    </script>
+
 </body>
 </html>
